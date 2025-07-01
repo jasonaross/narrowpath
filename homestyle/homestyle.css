@@ -1,0 +1,53 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #3b3b3b url(background.png) no-repeat center top;
+}
+
+img {
+    border: 0;
+}
+
+#wrapper {
+	background: none;
+	margin: 0 auto;
+	padding: 0;
+	width: 716px;
+}
+
+/* Header */
+
+#header {
+	height: 190px;
+}
+
+#logo {
+    position: relative;
+	font-size: 0px;
+	line-height: 0px;
+	left: 238px;
+	top: 42px;
+}
+
+#logo a {
+	border: none;
+	background: none;
+}
+
+/* Pages */
+
+#pages img {
+    display: block;
+	margin: 20px auto;
+}
+
+#new-pages {
+    height: 485px;
+	background: url("bg-newpages.png");
+}
+
+#old-pages {
+    background: url(bg-oldpages.png) repeat-y center top;
+	min-height: 400px;
+	padding-bottom: 20px;
+}

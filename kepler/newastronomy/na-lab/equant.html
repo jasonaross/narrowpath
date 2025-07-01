@@ -1,0 +1,30 @@
+<html><head><title>Astronomia Nova :: Equant Machine</title><script src="https://unpkg.com/@ruffle-rs/ruffle"></script></head><body>
+<H2>Equant Machine</H2>
+<div align=right><a href="AdjustableEquant.swf">Full-screen version</a></div>
+Here, you can play with the equant model used by the &ldquo;ancients&rdquo; before Kepler.  Everything is adjustable here:
+<UL>
+<LI>Horizontal mouse motion changes the &ldquo;<i>eccentricity of the eccentric</i>,&rdquo; the distance between the <font color="DDBB00">center of vision</font> and the <b>center of the orbit</b> of the planet.
+<LI>Vertical mouse motion changes the &ldquo;<i>eccentricity of the equant</i>,&rdquo; the distance from the center of motion (the <font color=blue>equant</font>) to the <b>center of the circular orbit</b>.
+<LI>Pressing the &lsquo;<b><tt>&lt;</tt></b>&rsquo; and &lsquo;<b><tt>&gt;</tt></b>&rsquo; keys will rotate the direction of the line of apsides.
+<LI>The <b><tt>spacebar</tt></b> pauses the motion.
+<LI>Pressing <b><tt>a</tt></b> and <b><tt>z</tt></b> will speed up and slow down the animation.
+<LI>Pressing <b><tt>l</tt></b> will <b><tt>l</tt></b>ock the eccentricities, so they won't change if you move the mouse.
+<LI>To see the <i>vicarious hypothesis</i>, press <b><tt>v</tt></b>.  Then you can hit <b><tt>b</tt></b> and <b><tt>v</tt></b> to switch between the vicarious hypothesis and the bisected vicarious hypothesis.
+<LI>If you miss the old <i>Mathematica</i>-style animations, use <b><tt>[</tt></b> and <b><tt>]</tt></b> to make the animation &ldquo;chunky.&rdquo;
+</UL>
+
+<center>
+<object width="800" height="400" id="AdjustableEquant" align="middle">
+<param name="allowScriptAccess" value="sameDomain" />
+<param name="movie" value="AdjustableEquant.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#ffffff" /><embed src="AdjustableEquant.swf" quality="high" bgcolor="#ffffff" width="800" height="400" name="AdjustableEquant" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"/>
+</object>
+</center>
+
+<H3>What am I seeing?</H3>
+<div style="text-indent:2em">
+On the left, you are seeing the actual model of planetary motion.  The line from the equant moves at a uniform speed (press <b><tt>e</tt></b> to see only the equant line), moving the black planet around the orbit.  The center of vision is watching it, with a red line drawn to indicate the line of sight.
+<p>
+On the right are the extended lines of vision.  The blue line indicates where the equant sees the planet, while the red line indicates where the center of vision sees the planets.  The blue line on the right is parallel to the blue line on the left, and likewise for the red lines.  This allows you to watch the perceived speeding-up and slowing-down of the planet.
+</div>
+
+</body></html>

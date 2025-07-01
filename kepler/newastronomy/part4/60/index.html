@@ -1,0 +1,112 @@
+<HTML><HEAD><TITLE>The Kepler Problem</TITLE></HEAD><BODY BGCOLOR="191970" vlink="FF3333" link="FF3333">
+<FONT COLOR="FFFFFF"><BIG>
+	<CENTER>
+<H1>The Kepler Problem</H1>
+<H2>New: <a href="Chapter 60 Homework.pdf">homework</a>!</H2>
+	</CENTER>
+
+
+Kepler has demonstrated, in chapter 59, that although the planets move in elliptical orbits, it is possible (and actually necessary) to use a <i>circular</i> area to measure the sum of distances of the locations of the planet from the sun, and thus to compute its mean anomaly, or time.
+<br><br>
+(These images are not transparent, so if you print this page, you'll use up a lot of blue ink.  You might be better off copying and printing the text.  Click <a href="p598-eccentric-equated-w.gif">here</a> for a printable version of the diagram from the book.)
+<br><br>
+<hr>
+<IMG SRC="ch60-three-anomalies.gif" ALIGN=RIGHT>
+<br><br>
+<center><H2>Three Anomalies</H2></center>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Here you have the three anomalies, as understood in chapter 59.  The <font color="CCCCFF">eccentric</font> anomaly is the light-blue line along the edge of the path.  This measures the angle that the planet has moved from the point of view of the red center.  The <font color="FFDD00">equated</font> anomaly is the orange arc denoting the angle the planet has moved from the perspective of the sun.  The mean anomaly (time) is the sum of the area cut out of the circle by the planet's motion as seen from the sun.  It is the red circular sector added to the green triangle.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For Kepler to put his theory into practice, he has to have a way of going from one anomaly to another.
+<br clear=all>
+<hr>
+<IMG SRC="chapter60-eccentric-mean.gif" ALIGN=RIGHT>
+<br><br>
+<H2>Getting the mean anomaly from the eccentric anomaly</H2>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Starting with the eccentric anomaly (blue angle), it is easy to find the mean anomaly (total area -- both red and green).  First, create the red sector: as the angle is to the full 360&deg;, so is the area of the sector to the area of the entire circle.  Then add the green triangle.  Since the area of a triangle is half its base times its height, and the base of the moving triangle is always the eccentricity between the sun and the planet's center, we only have to worry about the height.  The dashed blue line measures the height of the triangle, which is the <i>sine</i> of the blue angle.  Thus, the triangles are to each other as the sines of the blue angle.  So we add the sector, which we know, to the area of the triangle, which we know (using a table of sines to look up the correct height), to get the mean anomaly.<br>
+<center><font face="Arial"><font face="Verdana">Numerical example:</font></font><br></center>
+Let's say the eccentricity is 1/4 the radius, and that the eccentric (blue) angle is <b><u>30&deg;</u></b>.  Now, the circular sector is the entire size of the circle (&pi;r<sup><small>2</small></sup> = &pi;, since we can take r as 1) times the portion of the circle we have, or: &pi; &times; (30&deg;/360&deg;) = <font color="FFAA88"><b><u>&pi;/12</u></b></font>.  Now, let's take the triangle.  It has a base of 1/4 (the eccentricity) and a height of Sin(30&deg;), which is 1/2.  So its area is 1/2(base&times;height) = 1/2&times;1/4&times;1/2 = <font color="CCFF88"><b><u>1/16</u></b></font>.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This gives us our total mean anomaly of <b><u>&pi;/12 + 1/16</u></b>.
+
+
+<br clear=all><br><br>
+<hr>
+<IMG SRC="chapter60-eccentric-equated.gif" ALIGN=RIGHT>
+<br>
+<H2>Getting the equated anomaly from the eccentric anomaly</H2>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If arc AK as perceived from the center H is known, then LH is simply its cosine ("sine of its complement" for Kepler).  HN is the known eccentricity.  Since triangles LHK and THN are similar (sharing the angle at H), as KH is to HL, so is HN to HT.  Therefore, we know HT.  Now by construction, since it is the way Kepler makes the ellipse, the brown length MN is created equal to KT.  Therefore, for triangle MLN, we know MN and LN.  So we can simply look up which angle has the cosine of LN/MN, and we'll know the equated angle.
+<br><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Therefore, the angle of the equated anomaly LNM will not be hidden."</i>
+<center><font face="Arial"><font face="Verdana">Numerical example:</font></font><br></center>
+Let's again take the eccetricity <font color="FF9977">HN</font> as <font color="FF9977">1/4</font>, and now make the eccentric angle <b><u>60&deg;</u></b>  Now, <font color="FFAAEE">HK</font>, the radius, is <font color="FFAAEE">1</font>, and the cosine <font color="CCCCFF">LH</font> of 60&deg; is <font color="CCCCFF">1/2</font>.  Since HK is to LH (1 : 1/2) as HN is to HT (1/4 : HT), this makes <font color="FFFFAA">HT</font> = <font color="FFFFAA">1/8</font>.  We can now add <font color="FFAAEE">HK</font> and <font color="FFFFAA">HT</font> to get <font color="EEAA55">MN</font> = <font color="EEAA66">9/8</font>.  We can also add together <font color="CCCCFF">LH</font> and <font color="FF9977">HN</font> to get <b>LN</b>=3/4.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thus, the equated angle we are seeking has as its cosine <b>LN</b>/<font color="EEAA55">MN</font> = (<b>3/4</b>)/(<font color="EEAA55">9/8</font>) = 2/3.  So we look this up in trigonometric table to find that the equated anomaly, angle LNM with cosine 2/3, is <u><b>48&deg;11'23"</b></u>.
+
+<br clear=all>
+<hr>
+<IMG SRC="chapter60-eccentric-equated.gif" ALIGN=RIGHT>
+<H2>Getting the eccentric anomaly from the equated anomaly</H2>
+This one is more difficult!  Kepler offers a few methods for this determination, and we will follow his last one, on pages 598-599.  Our technique will be to find the length <font color="CCCCFF">LH</font>, which is the cosine of our desired eccentric angle <font color="CCFF88">LHK</font>.  We will use radius <font color="FFAAEE">HK</font> = <font color="FFAAEE">1</font>, and eccentricity <font color="FF9977">HN</font> = <font color="FF9977">e</font>.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First off, we have the angle LNM, and we will look at its cosine: LN = <font color="EEAA55">MN</font> Cos LNM.  Now <font color="CCCCFF">LH</font> = LN - <font color="FF9977">HN</font>, so <font color="CCCCFF">LH</font> = <font color="EEAA55">MN</font> Cos LNM - <font color="FF9977">HN</font>, or, since <font color="EEAA55">MN</font> = <font color="FFAAEE">HK</font> + <font color="FFFFAA">HT</font> = <font color="FFAAEE">1</font> + <font color="FFFFAA">HT</font>,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="CCCCFF">LH</font> = (<font color="FFAAEE">1</font> + <font color="FFFFAA">HT</font>) Cos&nbsp;LNM&nbsp;-&nbsp;<font color="FF9977">e</font>.<br>
+But we also know from similar triangles HLK and HTN, that <font color="CCCCFF">LH</font>:<font color="FFAAEE">HK</font>=<font color="FFFFAA">HT</font>:<font color="FF9977">HN</font>, or <font color="CCCCFF">LH</font>:<font color="FFAAEE">1</font>=<font color="FFFFAA">HT</font>:<font color="FF9977">e</font>, which means that<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font color="CCCCFF">LH</font> = <font color="FFFFAA">HT</font>/<font color="FF9977">e</font>.<br>
+Combining these, <font color="CCCCFF">LH</font> = <font color="CCCCFF">LH</font>, we get:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="FFFFAA">HT</font> / <font color="FF9977">e</font> = (<font color="FFAAEE">1</font> + <font color="FFFFAA">HT</font>) Cos LNM - <font color="FF9977">e</font><br>
+Multiplying both sides by <font color="FF9977">e</font>:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="FFFFAA">HT</font> = <font color="FF9977">e</font> Cos LNM + <font color="FF9977">e</font> <font color="FFFFAA">HT</font> Cos LNM - <font color="FF9977">e<sup><small>2</small></sup></font><br>
+Isolating <font color="FFFFAA">HT</font>:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="FFFFAA">HT</font> (<font color="FFAAEE">1</font> - <font color="FF9977">e</font> Cos LNM) = <font color="FF9977">e</font> Cos LNM - <font color="FF9977">e<sup><small>2</small></sup></font><br>
+Dividing both sides:
+<TABLE>
+<TR><TD><TD><font color="ffffff"><font color="FF9977">e</font> Cos LNM - <font color="FF9977">e<sup><small>2</small></sup></font>
+<TR><TD><font color="ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="FFFFAA">HT</font> = <TD><hr>
+<TR><TD><TD><font color="ffffff"><font color="FFAAEE">1</font> - <font color="FF9977">e</font> Cos LNM
+</TABLE>
+And since <font color="CCCCFF">LH</font> = <font color="FFFFAA">HT</font> / <font color="FF9977">e</font>, we have:
+<TABLE>
+<TR><TD><TD><font color="ffffff">Cos LNM - <font color="FF9977">e</font>
+<TR><TD><font color="ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="CCCCFF">LH</font> = <TD><hr>
+<TR><TD><TD><font color="ffffff"><font color="FFAAEE">1</font> - <font color="FF9977">e</font> Cos LNM
+</TABLE>
+So all we have to do is use our correct numbers for the cosine of LNM and our eccentricity <font color="FF9977">e</font>, and we'll have <font color="CCCCFF">LH</font>.  Since <font color="CCCCFF">LH</font> is the cosine of angle <font color="CCFF88">AHK</font>, all we have to do is look it up in a trigonometric table.
+<center><font face="Arial"><font face="Verdana">Numerical example:</font></font><br></center>
+Let's use Kepler's example, and take eccentricity <font color="FF9977">HN</font> (<font color="FF9977">e</font>) as .09265, and our equated angle LNM as <b><u>30&deg;</u></b>.  We then know that:<br>
+<TABLE>
+<TR><TD><TD><font color="ffffff">Cos 30&deg; - .09265
+   <TD><TD><font color="ffffff">.866025 - .09265
+   <TD><TD><font color="ffffff">.773375  
+   <TD>
+<TR><TD><font color="ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="CCCCFF">LH</font> = <TD><hr>
+   <TD><font color="ffffff">=<TD><hr>
+   <TD><font color="ffffff">=<TD><hr>
+   <TD><font color="ffffff">=.84084
+<TR><TD><TD><font color="ffffff">1 - .09265 Cos 30&deg;
+   <TD><TD><font color="ffffff">1 - .09265 .866025
+   <TD><TD><font color="ffffff">.919763
+</TABLE>
+And, looking up in a table, we see that the angle with cosine .84084 is <font color="CCFF88"><b><u>32&deg;46'</u></b></font>, as Kepler gives on page 599.
+
+
+
+<br clear=all>
+<hr>
+<IMG SRC="chapter60.gif" ALIGN=RIGHT>
+<H2>Getting the eccentric anomaly from the mean anomaly</H2>
+
+<i>
+<BLOCKQUOTE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;But given the mean anomaly, there is no geometrical method of proceeding to the equated, that is, to the eccentric anomaly.  For the mean anomaly is composed of two areas, a sector and a triangle.  And while the former is numbered by the arc of the eccentric, the latter is numbered by the sine of that arc multiplied by the value of the maximum triangle, omitting the last digits.  And the ratios between the arcs and their sines are infinite in number.  So, when we begin with the sum of the two, we cannot say how great the arc is, and how great its sine, corresponding to this sum, unless we were previously to investigate the area resulting from a given arc; that is, unless you were to have constructed tables and to have worked from them subsequently.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is my opinion.  And insofar as it is seen to lack geometrical beauty, I exhort the geometers to solve me this problem:<br><br>
+<blockquote>Given the area of a part of a semicircle and a point on the diameter [the sun, here], to find the arc and the angle at that point, the sides of which angle, and which arc, encloses the given area.  Or, to cut the area of a semicircle in a given ratio from any given point on the diameter.</blockquote>
+It is enough for me to believe that I could not solve this <u>a priori</u>, owing to the heterogeneity of the arc and the sine.  Anyone who shows me my error and points the way will be for me the great Apollonius.</i> (pp. 600-1)
+</BLOCKQUOTE>
+
+<center><font face="Arial"><font face="Verdana">Numerical example:</font></font><br></center>
+Find the eccentric anomaly (blue angle) corresponding to a mean anomaly (combined red and green area) of <b><u>1/6</u></b>.  That is, find the eccentric angle corresponding to the planet's location after it has moved one-sixth of the way along its orbit: tell us where it will be in the future.  That is the purpose of astronomy, correct?  So, work it out -- what's the answer?
+
+<HR>
+<CENTER>
+<table><tr>
+<td><a href="../../part5/index.html">Part V</a></td><td><a href="../../part5/index.html"><img src="../../next.gif"></a></td>
+</tr></table>
+</CENTER>
+
+</BIG></FONT>
+</BODY></HTML>

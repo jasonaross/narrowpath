@@ -1,0 +1,139 @@
+<HTML><HEAD>
+<TITLE>Chapter 43 :: Testing Area-Time</TITLE>
+<link href="../../newastronomy.css" rel="stylesheet" type="text/css" />
+</HEAD><BODY style="background: url(../../background.jpg) repeat fixed">
+<table align=center>
+  <tr>
+  <td width=720 style="padding: 20px;" bgcolor="#ffffff">
+
+
+
+<Center>
+<H1>Applying Area-Time<br>
+<Small>Chapter 43</Small></H1>
+
+</Center>
+
+<p align=justify>Although we harbor suspicions about whether Mars's orbit is actually a circle (<a href="../41/index.html">chapter 41</a>), we have determined the eccentricity rather precisely in chapter 42, and, thus, we can test the hypothesis of <a href="../../part3/40/index.html">chapter 40</a> -- area-time -- for Mars.  By using the <a href="../../part2/16/index.html">vicarious hypothesis</a> of Part II as our faithful guide for longitudes, we can calculate the position of Mars according to area-time to see how it compares with the vicarious hypothesis.  We follow Kepler's work as he tries this out at the octants:</p>
+
+<object codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="400" height="400" id="90degrees" align="right">
+<param name="allowScriptAccess" value="sameDomain" />
+<param name="movie" value="90degrees.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#ffffff" /><embed src="90degrees.swf" quality="high" bgcolor="#ffffff" width="400" height="400" name="90degrees" align="right" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+</object>
+
+<H3>90&deg; eccentric <a href="../../part3/anomalies.png">anomaly</a></H3>
+<p align=justify>We determine the optical equation (the difference between where the center and the Sun see the planet) to be the angle whose tangent is 9264, which is 5&deg;17'34".</p>
+<p align=justify>Next, we find the area of the blue triangle, which is the <i>physical equation</i> -- the difference between the mean anomaly (the entire blue area swept out by the planet from aphelion) and the eccentric anomaly (the angle from the center, measured by the light blue circular sector).  The area of this triangle is half its base times its height, which is:</p>
+<div align=center>1/2 &times; 9264 &times; 100000<br>
+
+               = 463,200,000</div>
+
+			   
+<p align=justify>If the area of the entire circle, 31,415,926,536, is considered to be 360&deg;, then the area of the triangle, 463,200,000, corresponds to 5&deg;18'28".  This is the physical equation.</p>
+<p>To calculate the anomalies, we have:
+<ul>
+<li>Mean = Eccentric + Physical Equation<br>
+ = 95&deg;18'28".
+<LI>Eccentric = 90&deg;
+
+<LI>Equated = Eccentric - Optical Equation<br>
+ = 84&deg;42'26".
+</LI>
+</ul>
+</p>
+<p align=justify>Using the vicarious hypothesis for a mean anomaly of 95&deg;18'28", we get an equated anomaly of 84&deg;42'2", which differs from that determined by area-time (84&deg;42'26") by only 24".</p>
+
+
+
+<object codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="400" height="400" id="45degrees" align="left">
+<param name="allowScriptAccess" value="sameDomain" />
+<param name="movie" value="45degrees.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#ffffff" /><embed src="45degrees.swf" quality="high" bgcolor="#ffffff" width="400" height="400" name="45degrees" align="left" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+</object>
+
+<H3>At the octants</H3>
+<p align=justify>At 45&deg;, the physical equation triangle is smaller than at 90&deg;, having the same base of 9264, but a shorter height.  If we know the 90&deg; triangle to have a size of 5&deg;18'28", then this triangle has a size of</p>
+<div align=center>5&deg;18'28" &times; Sin(45&deg;)<br>
+
+              = 3&deg;45'12".</div>
+<p align=justify>Adding this physical equation to the eccentric anomaly of 45&deg; gives a mean anomaly of 48&deg;45'12".  To get the equated anomaly, we use the law of tangents to arrive at: 41&deg;28'54".</p>
+
+<p align=justify><em>But,</em> when we use the vicarious hypothesis for this mean anomaly, we arrive at an equated anomaly of 41&deg;20'33", which differs from that determined using area-time by 8'21".</p>
+<p align=justify>The anomalies corresponding to an eccentric anomaly of 135&deg; are determined similarly.</p>
+
+
+<H3 id="results">A comparison</H3>
+<table border=1 cellpadding=2 align=center>
+   <tr>
+   <th>&nbsp;&nbsp;&nbsp;&nbsp;Mean&nbsp;&nbsp;&nbsp;&nbsp;</th>
+   <th>&nbsp;&nbsp;Equated&nbsp;&nbsp; (area)</th>
+   <th>&nbsp;&nbsp;Equated&nbsp;&nbsp; (vicar.)</th>
+
+   <th>Difference</th>
+   </tr>
+       <tr>
+       <td align=center>0&deg;</td>
+       <td align=center>0&deg;</td>
+       <td align=center>0&deg;</td>
+       <td align=center>-</td>
+
+       </tr>
+   <tr>
+   <td align=center>48&deg;45'12"</td>
+   <td align=center>41&deg;28'54"</td>
+   <td align=center>41&deg;20'33"</td>
+   <td align=center>Area is +8'21"</td>
+
+   </tr>
+<tr>
+<td align=center>95&deg;18'28"</td>
+<td align=center>84&deg;42'26"</td>
+<td align=center>84&deg;42'2"</td>
+<td align=center>Area is +24"</td>
+</tr>
+<tr>
+<td align=center>138&deg;45'12"</td>
+
+<td align=center>130&deg;59'25"</td>
+<td align=center>131&deg;7'26"</td>
+<td align=center>Area is -8'</td>
+</tr>
+       <tr>
+       <td align=center>180&deg;</td>
+       <td align=center>180&deg;</td>
+
+       <td align=center>180&deg;</td>
+       <td align=center>-</td>
+       </tr>
+</table>
+
+<object codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="400" height="400" id="chapter43-still" align="right">
+<param name="allowScriptAccess" value="sameDomain" />
+<param name="movie" value="chapter43-still.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#ffffff" /><embed src="chapter43-still.swf" quality="high" bgcolor="#ffffff" width="400" height="400" name="chapter43-still" align="right" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+</object>
+
+<p align=justify>Once again, we find an error of eight minutes.  How does this error compare with that encountered in bisecting the vicarious hypothesis?  While the bisected vicarious placed Mars too close to the apsides, the area-time hypothesis places it too far.  Area-time thus causes the planet to spend too long in the middle longitudes (around 90&deg; eccentric anomaly). Click <a href="43animation.swf">here</a> for an <a href="43animation.swf">animation</a> of this difference.</p>
+
+
+
+
+
+<h3>Whence the error?</H3>
+<p align=justify>Remember that although we are using area as a measure for time in this chapter, area-time is <em>not</em> a primary principle for Kepler at this point.  His physical theory requires a speed-distance relationship, causing planets to take proportionally longer to equal arcs when they are farther from the sun.  So perhaps this error came from incorrectly using area as an approximation for the sum of the distances of the planet from the sun.</p>
+
+<img src="../../part3/40/image020.jpg" align=left>
+<p>Returning to the image of the conchoid from <a href="../../part3/40/index.html">chapter 40</a>, remember that the A points on the far right are the lines drawn from the sun to the planet on the circle, while AQRBSLA are the points on the dashed line indicating the <i>diametral distances</i>.  The area of the conchoid left of the dashed line AQRBSLA is equal to the area of the circle.  Thus, the sum of the distances of the planet to the sun (full conchoid) is larger, and the greatest disparity between the two occurs in the middle longitudes (along EBA).  Thus, by using the circular area instead of the sum of the distances, we have actually caused the planet to move <i>faster</i> in the middle longitudes by virtue of the distance being too <i>small</i>.  But we saw that area-time caused Mars to be <i>too slow</i> in the middle longitudes.  This error is in the wrong direction to be explained by the difference between area and sum-of-distances.</p>
+
+
+<hr>
+<center><i><big>Consequently, we must seek another occasion for this discrepancy.</big></i></center>
+<hr>
+
+<center br clear=all>
+<table><tr>
+<td valign=center><a href="../44/index.html">Next</a></td>
+<td valign=center><a href="../44/index.html"><img src="../../nastyle/arrow.jpg" valign=middle></a></td>
+</tr></table>
+</a></center>
+
+</td></tr></table>
+</BODY></HTML>

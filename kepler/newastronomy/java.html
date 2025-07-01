@@ -1,0 +1,52 @@
+<HTML><HEAD><TITLE>Computer Help</TITLE>
+<link href="newastronomy.css" rel="stylesheet" type="text/css" />
+</HEAD><BODY style="background: url(background.jpg) repeat fixed">
+<table align=center>
+  <tr>
+  <td width=720 style="padding: 20px;" bgcolor="#ffffff">
+
+<center>
+<H1>Computer Help</H1>
+</center></font>
+
+<hr>
+<table><tr>
+<td><img src="ie.jpg"></td>
+<td>This site is rather demanding because of the large number of animated GIF images it contains.  We've found that, for PCs, <i>Internet Explorer</i> works better than <i>Firefox</i>.</td>
+</tr></table>
+
+<hr>
+<table><tr>
+<td><img src="javalogo.gif"></td>
+<td>If you receive an error box informing you that <TT>The Java Runtime Environment Failed to Load</TT>, then you may need to download the newest version of Java.  You can do that by <a href="http://www.java.com/getjava/">clicking here.</a> For IE7, you'll need Java 1.6.</td>
+</tr></table>
+
+<hr>
+<img src="prevent.jpg" align=left><br clear=all>
+&nbsp;&nbsp;&nbsp;&nbsp;<b><big>&uarr;</big></b>  Has this bar ever popped up?  If so, click it and <i>Allow</i> the content for the animations to work correctly.  This bar appears if you downloaded the .zip file of the website and are viewing the pages of your computer locally.
+<br clear=all>
+
+<hr>
+<img src="live3d.jpg" align=left>
+If the LiveGraphics3D boxes on the animations just say <tt>initializing</tt> with a stellated star picture, but never actually load, you'll have to increase the amount of memory available to Java.<br>
+Note: these instructions show the boxes for my version of Windows XP, but it seems pretty similar for other operating systems.  You'll need to find your Java control panel, and then find a blank box that says something like "<TT>Runtime Parameters</TT>."  Click on the box, and type this in (including the '<TT>-</TT>'):
+<UL>
+<LI>If you have 1GB or more of RAM, then type <TT>-Xmx512m</TT> (all animations will work)
+<LI>If you have 512MB of RAM, then type <TT>-Xmx256m</TT> (all animations will probably work)
+<LI>If you have 256MB of RAM, then type <TT>-Xmx128m</TT> (some of the animations will definitely not work, sorry)
+</UL>
+
+<p><em>Note: This is a tricky business!  You may wish to try -Xmx300m, even if you have more RAM available.  If you choose too large a value, Java may fail.  Also, restarting your computer may help, since Java insists on having contiguous memory allocated to itself.</em></p>
+
+<p>Here are some screen shots of how I did it on my computer:
+Windows users: Click <i>Start</i>, go to <i>Control Panel</i>, and open the <i>Java</i> control panel.</p>
+<br>
+<center><img src="java1.gif"></center>
+<br>
+<p>Now click on the <i>Java</i> tab, and <i>View</i> the <i>Java Applet Runtime Settings</i>.  When a new, small window opens up, click on the box on the right (Java Runtime Parameters), and enter <TT>-Xmx512m</TT> to increase the maximum memory for Java.  Here, the 512m means 512MB.  You probably shouldn't go much over half of your memory, so if you have a computer with 256MB, you won't be able to see the 3D Planetary Motion animation (I'll work on this).  If you have 512MB in your computer, then type <TT>-mx256m</TT> in the box.  The planetary motion animation currently needs about 250MB.</p>
+<br><br>
+<center><img src="java2.gif"></center>
+
+
+</td></tr></table></center>
+</font></BODY></HTML>

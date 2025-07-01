@@ -1,0 +1,299 @@
+<HTML>
+<HEAD>
+  <TITLE>Astronomia Nova, Part II: The Vicarious Hypothesis</TITLE>
+  <link href="../../newastronomy.css" rel="stylesheet" type="text/css" />
+  <!--
+    <script src="/ruffle/ruffle.js"></script>
+  -->
+  <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+</HEAD>
+
+
+<BODY style="background: url(../../background.jpg) repeat fixed">
+<table align=center>
+  <tr>
+  <td width=800 style="padding: 20px;" bgcolor="#ffffff">
+
+<CENTER><H1>The New Astronomy, Part II</H1></CENTER>
+<hr>
+<blockquote><i><p align=center>
+"But, my good man, if I were concerned with results, I could have avoided all this work, being content with the vicarious hypothesis.  Be it known, therefore, that these errors are going to be our path to the truth."  -- Johannes Kepler, <i>Astronomia Nova</i>, Chapter 49</p>
+</i></blockquote><hr>
+
+<CENTER><H1>The Vicarious Hypothesis</H1></CENTER>
+
+<p>Kepler, armed with his table of apparent oppositions from Chapter 15 (rather than the mean oppositions used by Ptolemy, Copernicus, and Brahe), is ready to take on the First Inequality of Mars's motion in Chapter 16.  He begins the chapter with a quick summary of past approaches to this question.  First, the act of removing the motion of the earth to eliminate the Second Inequality by using oppositions, still leaves behind an unequal motion.  That is, comparing two apparent longitudes of Mars at opposition, with the mean longitudes (the time that the oppositions occured), indicates an inequality of speed: he uses the examples of the 1591 and 1597 oppositions.</p>
+
+<p>From the changing speed of the planet comes the hypothesis that there are locations on the zodiac of fastest and of slowest speed for the planet -- the apsides.  To account for this motion, the eccentric was used, but it did not agree with the observations.  Ptolemy was led to create the equant: <i>"the important discovery that the center of the eccentric that carries the center of the epicycle is at the midpoint between the center of observation (the earth), and the center of uniformity."</i>  Ptolemy divided the eccentricity exactly in half.  (See the <a href="aside.html">aside</a> on eccentrics and equants.)</p>
+
+<p>Kepler does not trust Ptolemy's result, thinking that he just guessed: <i>"And, without a single demonstration, he nevertheless relied upon this principle."</i>  Kepler didn't think that the center of distance of the planet had to lie directly in the middle between the sun and the equant, and neither did Tycho.  So, Kepler set out to determine, in painstaking detail, the exact nature of the planet's orbit, for the determination of which, four opposition measurements are required.  Ptolemy and Copernicus required only three observations, because they made an additional assumption: that the center of distance of the planet lay at the midpoint between the equant and the sun.  Kepler does not make this assumption, and thus requires another observation.</p>	
+
+Kepler makes only two assumptions for this task:
+<blockquote>
+	"[W]hat was assumed was: that the orbit upon which the planet moves is a perfect circle; and that there exists some unique point on the line of apsides at a fixed and constant distance from the centre of the eccentric about which point Mars describes equal angles in equal times."  (p.284)
+</blockquote>
+The "unique point" Kepler is refering to, is the equant point.  (See the <a href="aside.html">aside</a>, if you haven't already).
+
+
+<CENTER><H3>The Vicarious Hypothesis</H3></CENTER>
+<p>Armed with an understanding of opposition observations and the idea of the equant, let's work through Kepler's vicarious hypothesis.  Kepler uses four observations, taken in years 1587, 1591, 1593, and 1595.  Based on the time between these observations,
+and knowing how long Mars takes to go around the sun, Kepler can determine the <i>mean anomaly</i> of the observations -- where the equant would have "seen" Mars.  Here is an animation (not to scale) of a uniformly moving, time-counting equant on the left measuring mean longitude, and the actual planetary motion on the right.  At each opposition, both the observed longitude of Mars at opposition (<i>where</i> it was) and its mean longitude (<i>when</i> it was there) are recorded.  Note that these are two separate diagrams, since we don't yet know where to locate the equant in the heavens, and that the angles between the apparent longitudes of oppositions, and the angles between the <i>mean</i> longitudes are not equal -- Mars's speed changes.</p>
+
+<center>
+<H3>The Two Anomalies:</H3>
+<img src="mean-apparent-16.gif"><br>
+<p class="caption">
+(Note: This is mean and apparent <i>anomaly</i>, not mean and apparent sun as discussed at the end of Part I.  For his hypothesis, Kepler uses the apparent sun.)</p>
+</center>
+<br>
+<p>Now Kepler has a set of observations for the mean anomaly and the apparent anomaly.  They have been transfered to lines of sight in the diagrams below.</p>
+
+<!--  (* Code for the following graphics *)>
+observerangles = Graphics[{
+      {Line[{{0, 0}, {100 Cos[cf], 100 Sin[cf]}}]},
+      {Line[{{0, 0}, {100 Cos[cg], 100 Sin[cg]}}]},
+      {Line[{{0, 0}, {100 Cos[ce], 100 Sin[ce]}}]},
+      {Line[{{0, 0}, {100 Cos[cd], 100 Sin[cd]}}]}
+      }
+    , AspectRatio -> 1,
+    PlotRange -> {{-1, 1}, {-1, 1}}
+    ]
+	-->
+<img src="equant.gif" align=left>
+<img src="observer.gif" align=right>
+<center> 
+<br>These are the actual angles used by Kepler.
+<br><br>On the <a href="big-equant.gif">left</a> are lines coming fom the equant in the direction that it "sees" Mars.
+<br><br>To the <a href="big-observer.gif">right</a> are lines coming from the sun in the direction of the four Mars observations.
+<br><br>Click on the links to get the pictures by themselves. Print them out so you can experiment.
+<br><SMALL><font face="Verdana">(Caveat lector: All guarantees of comprehension are void if you don't print them out!)</FONT></SMALL>
+</center>
+<br clear=all>
+
+<p>Now that we know for four oppositions the angles at which the observer and the equant see Mars, we can determine where the equant is located in relation to the sun.  Trace your printouts onto transparency sheets or the like.  If you overlay the two sets of observations, you notice that as you move the two sheets, you change the points of intersection of corresponding lines of sight.  These intersections are where the actual body of Mars must have been located to have given the directions from the equant and the sun.&nbsp; 
+The challenge is:</p>
+<img src="p252.gif" align=right>
+<ol>
+<li>to locate and orient the sheets so that the four intersection points (locations of Mars) lie on a circle
+<li>to make sure that the center of that circle lies on the line between the sun and the equant point
+</ol>
+Here's how Kepler states the problem:
+<blockquote>
+Proposition.  It is now required to select values for angles FAH and FCH such that the points F, G, D, E stand on one circle, and that center B of that circle lie between the points C [equant] and A [sun] on the line CA.
+</blockquote>
+
+<p>Try your hand at satisfying these requirements.  If you make an honest effort at it, you'll soon realize that this is incredibly difficult!  Kepler writes of its difficulty:</p>
+
+<blockquote>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The solution is not geometrical, at least if algebra is not geometrical, but proceeds by a double iteration.  For algebra, too, forsakes us here, because the categories of art united by straight lines do not extend beyond straight lines to angles<!--, unless perchance one would wish to cram the entire theory of sines into this one operation-->.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(p.253)
+</blockquote>
+<!--
+  Is this really the best quote to keep here?
+  -->
+<p>Small changes in position have a huge effect on the location of the intersections.  This animation creates the four intersection points as black dots, the observer (the sun) as a red dot, and the equant as a blue dot, connects the observer and the equant with their four lines of sight to the intersection points, and helps you see whether you've made a circle.</p>
+<p>Did you know, that given any three points (as long as they aren't in a straight line), you can create one and only one circle that connects the three?  Try to figure out how if you don't know already.  This animation creates four circles with their centers -- one for each collection of three of the four points.  When the circles and centers come together, you know that all four points lie on one and the same circle.</p>
+
+<center><object width="600" height="600" id="VicariousHypothesis" align="middle">
+<param name="allowScriptAccess" value="sameDomain" />
+<param name="movie" value="../VicariousHypothesis.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#ffffff" /><embed src="../VicariousHypothesis.swf" quality="high" bgcolor="#ffffff" width="600" height="600" name="VicariousHypothesis" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+</object></center>
+
+<!--
+   <CENTER><img src="tryingitout.gif"></CENTER>
+-->
+
+<br clear=all>
+Although Kepler went through scores of iterations to solve this problem, he only puts six trials in his <i>Astronomia Nova</i>.  You can click <a href="vicarious-trials.pdf">here</a> to view a .pdf of these trials.
+<br><br>
+
+<center>
+<table border=1 cellpadding=4 bordercolor=black width=600 id="calculator"><tr><td align=center>
+<font face="sans-serif">[New!]</font><br>
+Recreate the calculations that Kepler went through using this chapter 16 calculator:
+<a href="k16-work.swf" onClick="return popup(this, 'Vicarious Hypothesis')">
+<img src="k16-work-small.png">
+</a>
+</td></tr></table>
+</center>
+
+<br><br>
+<center>This is the final result that Kepler accepts as the best possible, given his assumptions:</center>
+<center><img src="finalpic.jpg"></center>
+<center><small>Click <a href="vicarious.pdf">here</a> for a .pdf file that you can zoom in on.</small></center>
+<center>Here, for a circle with a radius (green center to black) of 100,000, the eccentricity of the eccentric (green to red) is 11,332, and that of the equant (green to blue) is 7,232.</center>
+
+<br clear=all>
+<CENTER><H2>Testing the Vicarious Hypothesis</H2></CENTER>
+Kepler writes:
+<blockquote>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;So this is the method by which the hypothesis of the first inequality was investigated using four acronychal positions of Mars.  In this, with Ptolemy, I have supposed that all positions of the planet throughout the heavens are so arranged as to be on the circumference of one circle; that the planet moves most slowly where it is at its greatest distance from the center of the earth (according to Ptolemy) or of the sun (according to Tycho and Copernicus); and that the point about which this retardation is measured is fixed.  Everything else I have demonstrated is indirect in form.  But whether the things I assumed in the demonstration are in fact so, or the opposite, will become clear in what follows.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I shall now test the remaining eight positions against this hypothesis, for the sake of consensus.  But in order that the test be universal and legitimate, I shall also throw in the motion of the apogee.  So I shall take this up first. (p.270)
+</blockquote>
+<p>In keeping with his commitment to absolute rigor, Kepler, in ch. 17, takes up the yearly change of aphelion, and the motion of the nodes.  He finds that the aphelion moves 1'4" a year, a small change, but one which he will take into account in testing the vicarious hypothesis over many years.  In chapter 18, Kepler uses the eight other acronychal observations of 1580, 1582, 1585, 1589, 1597, 1600, 1602, and 1604 to compare the prediction of the vicarious hypothesis with the actually observed positions.  Here are the differences between the longitude predicted by the vicarious hypothesis and the actually observed longitudes for the 12 oppositions (the four years used to create the vicarious hypothesis are underlined):</p>
+
+<CENTER>
+<TABLE border="2" cellspacing="5" cellpadding="5%">
+<TR><TH>1580<TH>1582<TH>1585<TH><u>1587</u><TH>1589<TH><u>1591</u>     <TH><u>1593</u><TH><u>1595</u><TH>1597<TH>1600<TH>1602<TH>1604</TR>
+<TR align=center><TD>0'9"<TD>1'34"<TD>1'36"<TD>0'16"<TD><i>2'12"</i><TD>0'51"<TD>0'42"<TD>0'14"<TD>0'3"<TD>0'18"<TD>1'47"<TD>0'27"</TR>
+</TABLE>
+</CENTER>
+<br>
+The differences for all twelve years are tiny -- the majority are less than <b>1'</b>, and the maximum error is a mere <b>2'12"</b>.
+<p>Wonderful!  Kepler has succeeded in "not just imitating, but even surpassing, the certitude of the Tychonic calculation."</p>
+
+<i>But...</i>
+
+
+
+<br clear=all>
+<CENTER><H2>Another Method for Finding the Eccentricity</H2></CENTER>
+<p>Compare the image of the vicarious hypothesis with Ptolemy's method of dividing the eccentricity.  As was said above, Ptolemy had the same distance between the equant and the center of orbit as between the observer and the center of the orbit, something that Kepler did <i>not</i> assume, and, as we see, he determined these two distances to be different.  This determination was based on acronychal longitude observations.  But, what if we use latitudes to determine the eccentricity?  Kepler does so in chapter 19.</p>
+<img src="p282.gif" align=right>
+<p>Mars's eccentric is not in the same plane as the ecliptic (the plane of earth's orbit), but, rather, it is said to be inclined, at an angle of 1&deg;50' to be precise (as determined in chapter 13).  Kepler looks at Mars at two locations which are at the same time both near its <i>limits</i> (the places where it reaches this maximum 1&deg;50' inclination above the ecliptic) and near its <i>apsides</i> (its closest and furthest locations from the sun).  Here is an animation of Kepler's diagram from page 282, using the observations that Kepler uses.  The green dots are the positions of the earth in 1585 and 1593, while the red dots are the Mars positions:</p>
+<CENTER>
+<APPLET ARCHIVE="live.jar" CODE="Live.class" WIDTH=600 HEIGHT=300 ALIGN=CENTER>
+<PARAM NAME="MAGNIFICATION" VALUE=2.>
+<PARAM NAME="BGCOLOR" VALUE=#FFFFFF>
+<PARAM NAME="INPUT_FILE" VALUE="19.m">
+<PARAM NAME="SPHERICAL_BACKGROUND" VALUE="stars.jpg">
+</APPLET>
+</CENTER>
+<CENTER>Here, point <b>D</b> is the big red spot facing you.  Click and drag.</CENTER>
+<CENTER><blockquote><blockquote>
+In the diagram of page 282, <b>B</b> and <b>C</b> are the earth positions, while <b>D</b> and <b>E</b> are the Mars positions (<b>D</b> above the plane, <b>E</b> below it).  Angles <b>HBD</b> and <b>LCE</b> are the latitudes measured from the earth.  The red center of Mars's orbit is <b>K</b>, while the sun is <b>A</b>.)
+</blockquote></blockquote></CENTER>
+<br clear=all>
+Now, it's time to use some trigonometry.  We know:
+<ul>
+<li>The inclination of the orbit of Mars (1&deg;50')
+<li>Our observed latitude of Mars from the earth
+<ul><li>The computed third angle in the triangle</ul>
+<li>Our distance from the sun (taken from Tycho's <i>Progymnasmata</i>) <a href="footnote1.html">(fn1)</a>
+</ul>
+<p>Thus, with the law of sines, we can compute another leg of the triangle -- the distance from Mars to the sun.  These distances from Mars to the sun are different on the two sides of Mars's orbit.  Now, since Kepler is here assuming circular orbits, then these two Mars positions (with a correction) are on opposite ends of a diameter passing through Mars's orbit.  So if we know where they are located, we can find the center of the orbit (<b>K</b>).  The distance from this point to the sun (<b>A</b>) is the <i>eccentricity</i> of Mars's orbit.</p>
+<p>What do you think Kepler finds?  The vicarious hypothesis worked incredibly well, nearly to within the limits of observational precision for the longitudinal measurements in chapter 16.  Will its eccentricity agree with the eccentricity determined by these latitude measurements?</p>
+
+
+<br clear=all>
+<CENTER><H2>Breakdown</H2></CENTER>
+<H4>The results:</H4>
+<DL>
+<DT><i>Vicarious, total eccentricity</i>
+  <DD>18,564
+<DT><i>Vicarious, equant eccentricity</i>
+  <DD>7,232<br><br>
+<DT><i>Vicarious, eccentric eccentricity</i>
+  <DD><b>11,332</b>
+<DT><i>Latitudes, eccentric eccentricity</i>
+  <DD><b>8000-9943</b>
+</DL>
+<br>
+Whoa!  Not even close!  What does Kepler conclude?
+<br>
+<p class="quote">Therefore, something among those things we have assumed must be false.  But what was assumed was: that the orbit upon which the planet moves is a perfect circle; and that there exists some unique point on the line of apsides at a fixed and constant distance from the center of the eccentric about which point Mars describes equal angles in equal times.  Therefore, of these, one or the other or perhaps both are false, for the observations used are not false. (p.284)</p>
+<p>But, wait!  Look back at those results.  The total eccentricity (sun-equant distance) for the vicarious hypothesis is 18,564, and its half is <b>9282</b>.  Doesn't that fit well with the results from the latitude measurements of <b>8000-9943</b>?  Maybe Ptolemy wasn't so far off with his bisected eccentricity, after all.  Kepler writes:</p>
+<p class="quote">And Ptolemy too, as was remarked above, had taught us that half of the eccentricity found by acronychal observations is to be assigned to the eccentricity of the eccentric.  So it was not without reason that he did so, and we should not rashly reject this bisection, since the observed latitudes support it. (p.285)</p>
+<p>
+So, just to review:
+</p>
+<dl>
+<dt>Vicarious hypothesis
+<dd>Non-bisected eccentricity, and a near-perfect match for longitudes (within the limits of observation)
+<dt>Latitude observations
+<dd>Support a bisected eccentricity
+</dl>
+
+<p>Kepler's next question is: what will happen if we <i>combine</i> these ideas, moving the center of the orbit in the vicarious hypothesis to lie at the midpoint between the equant and the sun?  It would then be in agreement with the distances measured by observed latitudes.</p>
+
+
+<br clear=all>
+<CENTER><H2>Combining Hypotheses</H2></CENTER>
+<p>Kepler combines the aphelion direction and total eccentricity from the vicarious hypothesis, with bisecting the eccentricity (as determined by the latitude measurements), to make a bisected version of his vicarious hypothesis.  But, he no longer has the better-than-2' precision he had earlier.  For the 1582 opposition of Mars, he found the following results:</p>
+<CENTER>
+<TABLE border="1" cellspacing="5" cellpadding="5%">
+<TR><TH>Observed<TH>Bisected vicarious<TH>Vicarious</TR>
+<TR><TD>16&deg;55'30" Cancer<TD>17&deg;04'45" Cancer<TD>16&deg;57'04" Cancer</TR>
+<TR><TD><center>9'</center><TD><center>&larr; differences &rarr;</center><TD><center>7'40"</center></TR>
+</TABLE>
+</CENTER>
+<br>
+So the bisected vicarious differs from observation by 9', and from the vicarious hypothesis by 7'40", an error of about <b>8'</b>.
+<br>
+<center>
+<br>Here is an animation of the orbit of Mars, comparing the vicarious hypothesis and the bisected vicarious hypothesis.  On the left is the vicarious hypothesis with its non-bisected eccentricity, and on the right is the bisected vicarious.  The equant is blue, and the sun is red, as earlier on this page.  The black line from the equant moves at a uniform angular speed around the equant.
+</center>
+<IMG SRC="vicarious-move.gif"   width=360 height=360 align=left>
+<IMG SRC="bivicarious-move.gif" width=360 height=360 align=right>
+
+<br clear=all>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Now we will superpose the two, and have a more extended view to see where Mars is seen against the fixed stars under the two hypotheses.  There are two extended lines here, but they are <em>very</em> close!
+<br>
+<center><img src="extended-bivicarious.gif"></center>
+<center><small>Click <a href="bivicarious.pdf">here</a> for a .pdf file.  Zoom in to try to see the two lines.</small></center>
+<center>Can you see a difference?  Kepler found 8' in 1582.</center>
+<br>
+Do eight minutes even matter?  Ptolemy would have considered this bisected vicarious hypothesis a complete success:
+<blockquote>[Y]ou see that the very greatest error from the observations reaches 8', and this in Mars, which has the greatest eccentricity; it is therefore less for the rest.  Now Ptolemy professed not to go below 10', or the sixth part of a degree, in his observation...<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Since the divine benevolence has vouchsafed us Tycho Brahe, a most diligent observer, from whose observations the 8' error in this Ptolemaic computation is shown, it is fitting that we with thankful mind both acknowledge and honor this benefit of God...
+For if I had thought I could ignore eight minutes of longitude, in bisecting the eccentricity I would already have made enough of a correction in the [vicarious] hypothesis found in ch. 16.&nbsp;&nbsp;Now, because they could not have been ignored, these eight minutes alone will have led the way to the reformation of all of astronomy, and have constituted the material for a great part of the present work. (p.286)</blockquote>
+Kepler considers this failure of prediction, a success!
+
+<br clear=all>
+<CENTER><H2>One last look</H2></CENTER>
+<p>In Chapter 20, Kepler again uses latitude to determine the eccentricity of Mars, but this time he does not use acronychal observations.  Freed from this requirement, he uses observations when Mars is almost exactly at the apsides, to get an accurate measure of the eccentricity.  Once again, he arrives at an eccentricity that differs from the vicarious hypothesis: using these observations the eccentricity is found to be in the range of <b>8377 - 10,106</b>, which is not in agreement with the vicarious hypothesis value of <b>11,332</b>.</p>
+<p>To be completely thorough, he repeats his argument in the Tychonic form, using mean-sun acronychal observations, and determines an eccentricity based on latitudes of <b>10,312</b>, where Tycho had determined <b>12,352</b> from longitudes.</p>
+<blockquote>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It has therefore been shown that the Tychonic rendition is also subject to the same incongruity, that the eccentric has one eccentricity when computed from acronychal observations, and a different one when computed from the other observations. (p.292)</blockquote>
+Kepler concludes:
+<blockquote>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The blame for this discrepancy among the different ways of finding the eccentricity (I am repeating this over and over so that it will be remembered) falls entirely upon the faulty assumption studiously entertained by me, in common with Tycho and all who have ever devised hypotheses.  For the necessary consequence of this enquiry is that there is no single fixed point on the planet's eccentric about which the planet always sweeps out equal angles in equal times. (pp.292-293)</blockquote>
+
+The equant <i>cannot</i> exist!
+
+<br clear=all>
+<CENTER><H2>Why, and to what extent, may a false hypothesis yield the truth?</H2></CENTER>
+Kepler:
+<blockquote>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Therefore, our false supposition, although it does put the planet in the right longitudinal position at the right time, does not give it the right altitude...<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Further, even considering the longitude alone, the lack of any perceptible difference in effects between the as yet unknown true hypothesis and the false one assumed by us does not make the effect identical.  For there can be a small discrepancy which the senses do not perceive. (p.294)
+</blockquote>
+
+<div style="text-align:justify">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is true!  If error can escape detection, how do you know if you are correct?
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NB: Refer to the <a href="../part1/lunatic.html">Lunatic</a> theory, from part I -- it looks correct, too!)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kepler demonstrates, with a series of approximations, how to make up a geometrical description of the orbit of Mars, which, while not being true, will match the observations fairly well.  A working-through of this geometrical hypothesis can be seen by <a href="../21/index.html">clicking here</a>.  Similar is this animation, of a series of algebraic curves that approximate the catenary-curve more and more, coming imperceptibly close to its form, without ever actually being reflections of the non-algebraic principle that <i>creates</i> it:
+</div>
+<br><br><br>
+<!--  A good Cusa quote here on what measures what would be good!! -->
+
+<center><img src="catenary-approx.gif">
+<br><small>[A series of algebraic "Taylor approximations" attempting to reach the non-algebraic catenary.]</small></center>
+
+
+<br>
+<p>Just as the false algebraic curves appear like the non-algebraic catenary, so too can false, geometric planetary hypotheses appear to coincide in their predictions with the fundamentally <i>non-geometric</i> true cause of the orbits:</p>
+<blockquote>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It is at least now clear to what extent and in what manner the truth may follow from false principles: whatever is false in these hypotheses is peculiar to them and can be absent, while whatever endows truth with necessity is in general aspect wholly true and nothing else.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Further, as these false principles are fitted only to certain positions throughout the whole circle, it follows that they will not be entirely correct outside those positions, except to the extent (as shown in this example) that the difference can no longer be appraised by the acuteness of the senses. (p.298)</blockquote>
+
+<blockquote>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This mutual tempering of various influences causes one error to compensate for another, brings the calculation within the limits of observational precision, and makes it impossible to perceive the falsity of this particular hypothesis.  And so this sly Jezebel cannot gloat over the dragging of truth (a most chaste maiden) into her bordello.  Any honest woman following this false predecessor would stay closely in her tracks owing to the narrowness of the streets and the press of the crowd, and the stupid, bleary-eyed professors of the subtleties of logic, who cannot tell a candid appearance from a shameless one, judge her to be the liar's maidservant. (p.300)</blockquote>
+
+<div style="text-align:justify">
+Kepler has concluded that the equant point cannot exist.  So why does the equant seem to work so well, if it is, in reality, false?  What is the truth of which it is a near-shadow?  We will discover the answer to this question in <a href="../../part3/index.html">part 3</a>.
+</div>
+
+<!--
+So why does the equant seem to work so well, if it is, in reality, false?  What is the truth of which it is a near-shadow?<br><br>
+-->
+<hr>
+<big><i><center>
+Consequently, what we had previously constructed from the Brahean observations we have later in turn destroyed using other observations of his.  This was the necessary consequence of our having observed (in imitation of previous theorists) several things that were plausible but really false.</i></center></big>
+<hr>
+
+<center>
+<table><tr>
+<td valign=center><a href="../21/index.html">Next</a></td>
+<td valign=center><a href="../21/index.html"><img src="../../nastyle/arrow.jpg" valign=middle></a></td>
+</tr></table>
+</a></center>
+
+</td></tr></table>
+</BODY>
+</HTML>

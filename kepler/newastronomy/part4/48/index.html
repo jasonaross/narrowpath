@@ -1,0 +1,141 @@
+<HTML>
+<HEAD>
+<TITLE>Chapter 48 :: Distance-Time</TITLE>
+<link href="../../newastronomy.css" rel="stylesheet" type="text/css" />
+</HEAD><BODY style="background: url(../../background.jpg) repeat fixed">
+<table align=center>
+  <tr>
+  <td width=720 style="padding: 20px;" bgcolor="#ffffff">
+
+<H1 align=center>Chapter 48</H1>
+<hr>
+
+<p>Perhaps the errors in <a href="../47/index.html">Chapter 47</a> came from wrongly using the area as a measure of time.&nbsp; After all, Kepler has not yet considered area as a true measure of time, but only as a convenient way of adding an infinite number of distances.  The true principle in his mind is that the distance from the sun determines the rate of motion.&nbsp; In this chapter, Kepler uses a sum-of-distances approach, rather than an area approach for measuring time.&nbsp; This has several advantages:</p>
+<ol>
+<li>Using the true distance principle, rather than the approximate area-time hypothesis.
+<li>The inverse relationship does not hold if you sum up distances and then take the inverse, which is what happens if you use area.&nbsp; See the <a href="../46/aside.html">aside</a> from chapter <a href="../46/index.html">46</a> for an example.
+<li>It is no trouble to add up any particular number of distances.
+<li>Since no sector areas are involved, the problem of the size of ovoid sectors does not concern us.
+</ol>
+<p class="quote">&ldquo;And so with renewed preparations, I settled down again upon the eggs&hellip;&rdquo;</p>
+
+
+<H3>A <em>Difficult</em> Calculation</H3>
+<p>Kepler&rsquo;s path to implementing this idea is quite difficult, and will probably require several readings-through, and perhaps the use of a spreadsheet program to try to replicate Kepler&rsquo;s method.&nbsp; (The way to be sure that you know what Kepler is doing, is to do it yourself!)</p>
+<ol>
+<li>  <!-- 1 -->
+<object codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="200" height="400" id="Chapter48-still2" align="right">
+	<param name="allowScriptAccess" value="sameDomain" />
+	<param name="allowFullScreen" value="false" />
+	<param name="movie" value="Chapter48-still2.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#ffffff" />	<embed src="Chapter48-still2.swf" quality="high" bgcolor="#ffffff" width="120" height="180" name="Chapter48-still2" align="right" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+</object>
+Again using the idea of the fictitious semi-circle, move angle <b>GBD</b> through each degree of mean anomaly, and determine the distances <b>AG</b>.&nbsp; Add up all of these distances to get a sum for the entire path of the planet.&nbsp; Kepler reports a sum of 36,075,562 for the entire oval when the eccentricity is 9165.<br clear=all></li>
+<li>  <!-- 2 -->
+Now, by looking at each degree of mean anomaly, compare the distance at that mean anomaly to the average distance from the sun.&nbsp; The greater the distance, the less the planet will have moved in that amount of time.&nbsp; Create point <b>C</b>, which has moved the appropriate distance <b>DC</b> corresponding to the distance from the sun over that period.  <B>DC</b> is inversely proportional to length <b>AG</b>.  Also, to agree with chapter <a href="../45/index.html">45</a>, <b>C</b> must be at distance <b>AG</b> from the sun.&nbsp; Lines are drawn through <b>C</b> from <b>A</b> and <b>B</b>, creating points <b>E</b> and <b>F</b>, respectively:
+<br clear=all>
+<center>
+<object codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="230" height="380" id="Chapter48-still3" align="center">
+	<param name="allowScriptAccess" value="sameDomain" />
+	<param name="allowFullScreen" value="false" />
+	<param name="movie" value="Chapter48-still3.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#ffffff" />	<embed src="Chapter48-still3.swf" quality="high" bgcolor="#ffffff" width="230" height="380" name="Chapter48-still3" align="center" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+	<!-- 230 405 -->
+</object>
+</center>
+</li>
+<li>  <!-- 3 -->
+But, how can the correct angle <b>DBC</b> be determined, when the determined motion is along non-circular arc <b>DC</b>, rather than along circular arc <b>DF</b>?
+<p class="quote">&ldquo;It was therefore not enough to know the length DC.&nbsp; The angle CBD ought to have been investigated as well.&nbsp; For because CD is shorter than FD, CD does not measure the angle FBD, or CBD.</p>
+</li>
+<li>  <!-- 4 -->
+Kepler adopts a few approximations: that <b>CE</b> and <b>CF</b> are equal, and that arc <b>EF</b> is imperceptible.&nbsp; Then, assuming <b>CD</b> to be the same as <b>DF</b> (or <b>DE</b>), length <b>CD</b> is the measure of angle <b>EBD</b>.
+</li>
+<li>  <!-- 5 -->
+Now, calculate the length of <b>AE</b> and compare it to <b>AC</b> (equal to <b>AG</b>) as calculated in step 1.&nbsp; This difference is <b>CE</b>, which is assumed to be equal to <b>CF</b>, the measure of the ovoid&rsquo;s approach to the center <b>B</b>.&nbsp; The ratio <b>AC</b>&nbsp;&zwj;:&zwj;&nbsp;<b>AE</b> is a measure for how much greater arc <b>DC</b> must appear to <b>B</b> -- i.e. the optical magnification.
+</li>
+<li>  <!-- 6 -->
+Correct the angles <b>CBD</b>, according to this optical parallax.  Then, with known length <B>AC</b> (equal to <b>AG</b>, remember) and eccentricity <b>AB</b>, the law of tangents can be used to consruct a table of the equated anomaly <b>CAD</b> for all the degrees of mean anomaly.
+</li>
+</ol>
+
+<p>Whew!&nbsp; That&rsquo;s a lot of work!&nbsp; And no one anomaly can be known without working through all the others leading up to it.&nbsp; Kepler:</p>
+<p class="quote">&ldquo;I can&rsquo;t imagine anyone reading this not being overcome by the tedium of it even in the reading.&nbsp; So the reader may well judge how much vexation we (my calculator and I) derived hence, as we thrice followed this method through the 180&deg; of anomaly, changing the eccentricity each time.&rdquo;</p>
+<P>There is a problem in all of this&hellip;</p>
+
+
+<H3 id="length">Determining the ovoid distance</H3>
+<p>To properly account for the optical magnification of each portion of the oval orbit, we must first know the total length of the orbit.&nbsp; Otherwise, the magnification would be incorrect and the equated anomaly for mean anomaly of 180&deg; would not be 180&deg;.</p>
+<object codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="200" height="400" id="Chapter48-still1" align="left">
+	<param name="allowScriptAccess" value="sameDomain" />
+	<param name="allowFullScreen" value="false" />
+	<param name="movie" value="Chapter48-still1.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#ffffff" />	<embed src="Chapter48-still1.swf" quality="high" bgcolor="#ffffff" width="200" height="400" name="Chapter48-still1" align="left" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+</object>
+<p>Just as Kepler sought the quadrature of the <i>area</i> of the ovoid in chapter <a href="../47/index.html">47</a>, he must now determine its circumference.&nbsp; To this end, he uses the diagram on the left.&nbsp; The semi-circles <b>DR</b> and <b>HK</b> are centered on B, with radii <b>BD</b> and <b>BH</b> corresponding to the semi-major and and semi-minor axes, respectively, circumscribed outside and inscribed within, the green dotted ellipse <b><font color="green">DR</font></b>.&nbsp; The circumference of the ovoid must be greater than <b>HK</b> and less than <b>DR</b>, but where in the middle between the two is the correct circumference located?</p>
+<p>Kepler now draws two &ldquo;mean&rdquo; semi-circles: <b><font color="blue">DK</font></b> (in blue, centered on <b>I</b>) and <b><font color="red">OP</font></b> (in red, centered on <b>B</b>).&nbsp; Circle <b><font color="blue">DK</font></b> has a radius (and thus a circumference) which is the arithmetic mean between the two bounding circles, while circle <b><font color="red">OP</font></b> has a radius (and circumference) which is the <i>geometric</i> mean between the two.&nbsp; (Do you know how to construct <b><font color="red">OP</font></b>?)</p>
+<P>Kepler argues that it is correct to use the arithmetic mean circle <b><font color="blue">DK</font></b>.&nbsp; He reasons thus: the geometric mean circle has the same <i>area</i> as the ellipse, while the arithmetic mean circle has a larger radius (and area).&nbsp; But among shapes covering a given area, it is the circle which has the least circumference, and thus the geometric mean circle, having an area equal to the ellipse, must have too short a circumference.&nbsp; This leaves him with the arithmetic-mean semicircle, whose length is 179&deg;23&prime;40&Prime; where the semicircle <b>KR</b> is 180&deg;.</p>
+
+<H3>But&hellip;</H3>
+<p>This arithmetic length is only an estimate.&nbsp; Kepler must try out hypothesized lengths of the oval and work out the entire 180&deg; to determine whether he has chosen the right length for the oval.&nbsp; If he has, he will get an equated anomaly of 180&deg; for a mean anomaly of 180&deg;.</p>
+<p class="quote">&ldquo;As for me, I&hellip; by a most laborious and dogged calculation found&hellip; that where the perfect semicircle is 180&deg;, the oval is 179&deg;14&prime;15&Prime;.&rdquo;
+
+<p>With a length for the oval, Kepler can now implement his method.&nbsp; (For a degree-by-degree working-through, click <a href="Chapter 48 Calculation.xls">here</a> for a Microsoft <i>Excel</i> spreadsheet.)  This is the resulting motion:</p>
+<center>
+<object codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="480" height="440" id="Chapter48" align="center">
+	<param name="allowScriptAccess" value="sameDomain" />
+	<param name="allowFullScreen" value="false" />
+	<param name="movie" value="Chapter48.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#ffffff" />	<embed src="Chapter48.swf" quality="high" bgcolor="#ffffff" width="480" height="440" name="Chapter48" align="center" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+</object>
+</center>
+<p class="caption">The red point is the planet, while the blue point is the position of point <b>F</b> before the optical magnification of the oval path has taken place.&nbsp; In which regions of the orbit does the red point move more quickly than the blue?&nbsp; Do you understand why?</p>
+
+
+<H3>Results</H3>
+<p>Now Kepler can implement his tedious method, and compare his results with the &ldquo;veracious vicarious,&rdquo; his &ldquo;index of truth.&rdquo;</p>
+
+<table align=center>
+<tr>
+<th width=100>Mean Anomaly</th><th width=140>Equated Anomaly</th><th width=140>Equated (Vicarious)</th><th>Difference</th>
+</tr>
+<tr>
+<td align=center>45&deg;</td><td align=center>38&deg;5'33"</td><td align=center>38&deg;4'54"</td><td align=center>+ 39"</td>
+</tr>
+<tr>
+<td align=center>90&deg;</td><td align=center>79&deg;31'31"</td><td align=center>79&deg;27'41"</td><td align=center>+ 3'50"</td>
+</tr>
+<tr>
+<td align=center>135&deg;</td><td align=center>127&deg;0'1"</td><td align=center>126&deg;51'9"</td><td align=center>+ 8'52"</td>
+</tr>
+</table>
+
+<p>These errors, especially the fact that the 90&deg; value is so far off, indicate to Kepler that the eccentricity (9165) is too big.&nbsp; Redoing his entire lengthy calculation with an eccentricity of 9230, he arrives at:</p>
+
+<table align=center>
+<tr>
+<th width=100>Mean Anomaly</th><th width=140>Equated Anomaly</th><th width=140>Equated (Vicarious)</th><th>Difference</th>
+</tr>
+<tr>
+<td align=center>45&deg;</td><td align=center>38&deg;2'24"</td><td align=center>38&deg;4'54"</td><td align=center>&minus; 2'30"</td>
+</tr>
+<tr>
+<td align=center>90&deg;</td><td align=center>79&deg;26'49"</td><td align=center>79&deg;27'41"</td><td align=center>&minus; 0'52"</td>
+</tr>
+<tr>
+<td align=center>135&deg;</td><td align=center>127&deg;56'25"</td><td align=center>126&deg;52'0"</td><td align=center>+ 4'25"</td>
+</tr>
+</table>
+
+<p>As in chapter <a href="../47/index.html">47</a>, the planet moves too quickly in the middle longitudes.&nbsp; But note the reasonably good results -- this is the closest that Kepler has come to matching the accuracy of the vicarious hypothesis since he began trying to implement his physical causes in the current <a href="../index.html">Part IV</a>.
+<p class="quote">&ldquo;So, when I saw that as the physical causes introduced in chapter 45 were the more skillfully, and the more fittingly advocated, for the implementation of the theoretical foundations of the calculation, I came ever nearer to the true equations furnished by the vicarious hypothesis of ch. 16, I greatly congratulated myself, and was confirmed in the opinion of chapter 45.<br>
+&ldquo;On the other hand, since I disliked the many contrivances with which I contended in this chapter, I did not rest until I had established a more certain and direct way, and at the same time I began to suspect that the calculation had not accomplished everything which the opinion of chapter 45 had required.&rdquo;</p>
+
+
+<!--  Footer  -->
+<center>
+<table><tr>
+<td valign=center><a href="../49/index.html">Next</a></td>
+<td valign=center><a href="../49/index.html"><img src="../../nastyle/arrow.jpg" valign=middle></a></td>
+</tr></table>
+</a></center>
+
+</td></tr></table>
+</BODY>
+</HTML>

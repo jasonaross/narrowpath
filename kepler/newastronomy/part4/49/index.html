@@ -1,0 +1,87 @@
+<HTML>
+<HEAD>
+<TITLE>Chapter 49 :: A Return to Chapter 45</TITLE>
+<link href="../../newastronomy.css" rel="stylesheet" type="text/css" />
+</HEAD><BODY style="background: url(../../background.jpg) repeat fixed">
+<table align=center>
+  <tr>
+  <td width=720 style="padding: 20px;" bgcolor="#ffffff">
+
+<H1 align=center>Chapter 49</H1>
+<hr>
+
+<H3>Difficulties</H3>
+<p>Think of all the difficulties encountered in trying to implement the hypothesis of <a href="../45/index.html">Chapter 45</a>: we cannot know what portion of the oval path corresponds to a given time, since we do not know the total length of the oval path, but this could not be known without knowing the width of the lunules, but that cannot be known without knowing the motion, which would require the total length of the path!  Is this an <i>oval</i> argument, or a <i>circular</i> one?</p>
+<p class="quote">&ldquo;This is not just a fault in our understanding, but is utterly alien to the primeval ordainer of the planetary courses: we have hitherto found no anticipation of such lack of geometry in the rest of his works.&nbsp; Therefore a different approach must be taken for calling the opinion of chapter 45 to the calculations, or if this cannot be done, the opinion will totter owing to its being suspect of circularity of argument.&rdquo;</p>
+<p>Kepler considers an error in his thinking in the past three chapters: although the oval path results from the two powers of the sun and the planetary epicycle, he had been applying the solar power to the distance as determined by both.&nbsp; He now separates the two, using the hypothesis of the uniform-epicycle to generate distances of the planet from the sun, and then moves <i>the center of the epicycle</i> at a rate corresponding to this distance.
+<object codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="190" height="330" id="Chapter49-still" align="right">
+	<param name="allowScriptAccess" value="sameDomain" />
+	<param name="allowFullScreen" value="false" />
+	<param name="movie" value="Chapter49-still.swf" />
+	<param name="quality" value="high" />
+	<param name="bgcolor" value="#ffffff" />
+	<embed src="Chapter49-still.swf" quality="high" bgcolor="#ffffff" width="190" height="330" name="Chapter49-still" align="right" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+</object>
+
+Thus, it is not the time for the <em>planet</em> (<b>E</b>) to traverse a given arc (<b>BE</b>) which is determined by its distance from the sun, but rather the motion (<b>GD</b>) of the <em>center of the epicycle</em> (<b>D</b>).&nbsp; With this hypothesis, there is no longer any need for circularity of argument.</p>
+<p>Kepler creates two catalogs of values to do the work of determining the equated anomaly of the planet.</p>
+
+
+<H3>Two catalogs</H3>
+<p>First, for each degree of mean anomaly, calculate both the distance of the planet from the sun, and angle DAE -- the part of the equation due to the planet&rsquo;s motion around the epicycle.&nbsp; These values can be found with the law of tangents (to get the angle), and then the law of sines (to get the distance AE).</p>
+<p>Second, consider the distance of the planet from the sun at each degree of mean anomaly.&nbsp; The larger the distance, the shorter the motion, so we know that:<br>
+<div style="text-align:center">
+    <i>mean distance</i> : <i>this distance</i><br>
+	inversely as<br>
+    <i>mean motion (1&deg;)</i> : <i>this motion</i>.
+</div style="text-align:center">
+<div style="text-align:justify">We can use this relation to determine the amount the center of the epicycle moves for each degree of mean anomaly, with a smaller motion when the planet is further away.</div>
+</p>
+<p>As an example, here are the values for the first few degrees of mean anomaly:</p>
+<center><table>
+<tr><th WIDTH=60>Mean</th><th WIDTH=100>Distance</th><th WIDTH=100>Equation</th><th WIDTH=100>Epicycle motion</th></tr>
+<tr><td align=center>0&deg;</td><td align=center>109,264</td><td align=center>0&deg;</td><td align=center>0&deg;</td></tr>
+<tr><td align=center>1&deg;</td><td align=center>109,263</td><td align=center>0.0848&deg;</td><td align=center>0.9133&deg;</td></tr>
+<tr><td align=center>2&deg;</td><td align=center>109,259</td><td align=center>0.1695&deg;</td><td align=center>1.8265&deg;</td></tr>
+<tr><td align=center>3&deg;</td><td align=center>109,252</td><td align=center>0.2543&deg;</td><td align=center>2.7399&deg;</td></tr>
+</table></center>
+<p>As you can see, the planet is moving slowly here at aphelion, with less than one degree of motion of the epicycle per degree of mean anomaly.</p>
+<p class="caption"><a href="Chapter 49 Calculation.xls">Click here</a> for a Microsoft <i>Excel</i> spreadsheet of Kepler's catalogs.&nbsp; Notice that Kepler's description on page 493 of &ldquo;multiplying 60 minutes... by 100,210, and dividing the product by each of the distances in the semicircle&rdquo; does not work: 100,210 is too large.&nbsp; See the spreadsheet for calculations and discussion on what must instead be taken as the &ldquo;mean distance&rdquo; for this calculation.</p>
+<p>Here is the resulting motion, calculated exactly as Kepler writes in this chapter.&nbsp; Note that this egg is upside-down when compared to the orbit of <a href="../46/index.html">chapter 46</a>.&nbsp; Use the <tt><b>s</b></tt> and <tt><b>x</b></tt> keys to adjust the eccentricity:</p>
+
+<center><object codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="480" height="520" id="Chapter49" align="center">
+	<param name="allowScriptAccess" value="sameDomain" />
+	<param name="allowFullScreen" value="false" />
+	<param name="movie" value="Chapter49.swf" />
+	<param name="quality" value="high" />
+	<param name="bgcolor" value="#ffffff" />
+	<embed src="Chapter49.swf" quality="high" bgcolor="#ffffff" width="480" height="520" name="Chapter49" align="center" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+</object></center>
+
+
+
+<H3 id="results">Kepler's results</H3>
+<p>Kepler works through the 180&deg; of a semicircle to develop a full table of equated anomalies, which he is then able to compare to the results of his vicarious hypothesis.&nbsp; This is what he finds:</p>
+<center><table>
+<tr><th width=125>Mean<br>Anomaly</th><th width=125>Equated<br>(ch 49)</th><th width=125>Equated<br>(vicarious)</th><th width=125>Difference</th></tr>
+<tr><td align=center>45&deg;</td><td align=center>37&deg;56'43"</td><td align=center>38&deg;5'</td><td align=center>&minus;8</td></tr>
+<tr><td align=center>90&deg;</td><td align=center>79&deg;26'35"</td><td align=center>79&deg;27'</td><td align=center>0</td></tr>
+<tr><td align=center>120&deg;</td><td align=center>110&deg;28'8"</td><td align=center>110&deg;18&frac12;'</td><td align=center>+9&frac12'</td></tr>
+<tr><td align=center>150&deg;</td><td align=center>144&deg;16'49"</td><td align=center>144&deg;8'</td><td align=center>+9</td></tr>
+</table></center>
+<p>Now the planet moves too quickly in the middle longitudes -- again, an error opposite to that found in <a href="../43/index.html">chapter 43</a>.&nbsp; These errors are larger than the error we arrived at in chapter 48,</p>
+<p class="quote">&ldquo;But, my good man, if I were concerned with results, I could have avoided all this work, being content with the vicarious hypothesis.&nbsp; Be it known therefore, that these errors are going to be our path to the truth.&rdquo;</p>
+<p>With this new calculation, free of any circularity of argument, we can conclude that it is not our method of implementing the hypothesis of chapter <a href="../45/index.html">45</a>, but that hypothesis itself, which is in error.</p>
+
+
+<!--  Footer  -->
+<center>
+<table><tr>
+<td valign=center><a href="../50/index.html">Next</a></td>
+<td valign=center><a href="../50/index.html"><img src="../../nastyle/arrow.jpg" valign=middle></a></td>
+</tr></table>
+</a></center>
+
+</td></tr></table>
+</BODY>
+</HTML>
