@@ -40,8 +40,6 @@ There are several characteristic differences between the $4n+1$ and $4n+3$ famil
  
 ### Class Logistics
 
-These classes will be on Sundays and held in a hybrid format, both in-person in New Jersey and on Zoom.
-
-The dates I first proposed are March 1, 8, and 15. But it may have to be only two weeks: March 8 and 15.
+These classes will be on Sunday Mar. 8 and Sunday Mar. 15. They will be hybrid classes: both in-person in New Jersey and on Zoom.
 
 **If you have a time preference**, please let me know!
