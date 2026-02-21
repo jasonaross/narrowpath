@@ -1,6 +1,6 @@
 # The Geometry of the Primes, from the Standpoint of Gauss
 
-A series of three classes contrasting two families of primes, from the standpoint of geometry, the modulus, and the complex domain.
+A series of two classes contrasting two families of primes, from the standpoint of geometry, the modulus, and the complex domain.
 
 ### Background
 
@@ -40,6 +40,4 @@ There are several characteristic differences between the $4n+1$ and $4n+3$ famil
  
 ### Class Logistics
 
-These classes will be on Sunday Mar. 8 and Sunday Mar. 15. They will be hybrid classes: both in-person in New Jersey and on Zoom.
-
-**If you have a time preference**, please let me know!
+These classes will be on Sunday Mar. 8 and Sunday Mar. 15, at 11 a.m. EDT. They will be hybrid classes: both in-person in New Jersey and on Zoom.
