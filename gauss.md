@@ -40,4 +40,4 @@ There are several characteristic differences between the $4n+1$ and $4n+3$ famil
  
 ### Class Logistics
 
-These classes will be on Sunday Mar. 8 and Sunday Mar. 15, at 11 a.m. EDT. They will be hybrid classes: both in-person in New Jersey and on Zoom.
+These classes will start on Sunday, April 12, at 11 a.m. EDT. They will be hybrid classes: both in-person in New Jersey and on Zoom.
